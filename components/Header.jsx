@@ -11,7 +11,12 @@ const Header = () => {
                 </li>
                 <li>
                     <Link href="/user">
-                        <a>User Page</a>
+                        <a>User</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/comments">
+                        <a>comments</a>
                     </Link>
                 </li>
             </ul>
