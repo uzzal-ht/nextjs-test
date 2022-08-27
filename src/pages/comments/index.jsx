@@ -10,7 +10,7 @@ const Comments = ({comments}) => {
 
 
 export const getStaticProps = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/comments?_page=1&_limit=10")
+    const res = await fetch("https://jsonplaceholder.typicode.com/comments?_limit=10")
     const comments = await res.json()
     
     return {
