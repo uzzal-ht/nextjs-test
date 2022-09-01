@@ -1,18 +1,15 @@
-import UserCard from "./UserCard"
+import UserCard from "./UserCard";
 
 const UserSection = ({ users }) => {
     return (
         <div className="container">
-            <h3>All User</h3>
-            <div className="user-list">
-                {users.map((user, index) => (
-                    <UserCard key={index} {...user} />
+            <div className="grid grid-cols-4 gap-5">
+                {users.map((user) => (
+                    <UserCard key={user.id} {...user} />
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default UserSection;
-
-

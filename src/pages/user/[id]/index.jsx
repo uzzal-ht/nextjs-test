@@ -1,4 +1,4 @@
-const UserDetails = ({name, username, email}) => {
+const UserDetails = ({ name, username, email }) => {
     return (
         <div className="container">
             <div className="user-details">
@@ -7,20 +7,20 @@ const UserDetails = ({name, username, email}) => {
                 <p>{email}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export const getServerSideProps = async (context) => {
-    const {id} = context.query
+    const { id } = context.query;
 
-    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-    const user = await res.json()
-    
+    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+    const user = await res.json();
+
     return {
         props: {
-            ...user
-        }
-    }
-}
+            ...user,
+        },
+    };
+};
 
 export default UserDetails;

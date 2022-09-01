@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const UserCard = ({name, email, id}) => {
+const UserCard = ({ name, email, id }) => {
     return (
-        <div className="card">
+        <div className="border p-5">
             <h3>
                 <Link href={`/user/${id}`}>
                     <a>{name}</a>
@@ -10,7 +10,7 @@ const UserCard = ({name, email, id}) => {
             </h3>
             <p>{email}</p>
         </div>
-    )
-}
+    );
+};
 
 export default UserCard;

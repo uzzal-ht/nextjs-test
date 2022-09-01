@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const CommentCard = ({name, email, id}) => {
+const CommentCard = ({ name, email, id }) => {
     return (
         <div className="card border p-5 text-center">
             <h4>
@@ -10,7 +10,7 @@ const CommentCard = ({name, email, id}) => {
             </h4>
             <p>{email}</p>
         </div>
-    )
-}
+    );
+};
 
 export default CommentCard;
