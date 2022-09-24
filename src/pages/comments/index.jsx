@@ -1,10 +1,16 @@
+import Head from "next/head";
 import CommentSection from "../../components/CommentSection";
 
 const Comments = ({ comments }) => {
     return (
-        <div className="comment-wrapper">
-            <CommentSection comments={comments} />
-        </div>
+        <>
+            <Head>
+                <title>Comment page</title>
+            </Head>
+            <div className="comment-wrapper">
+                <CommentSection comments={comments} />
+            </div>
+        </>
     );
 };
 

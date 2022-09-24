@@ -1,9 +1,9 @@
 const Details = ({ result }) => {
     return (
-<div className="container">
-    <h3>{result?.title}</h3>
-    <p>{result?.body}</p>
-</div>
+        <div className="container">
+            <h3>{result?.title}</h3>
+            <p>{result?.body}</p>
+        </div>
     );
 };
 

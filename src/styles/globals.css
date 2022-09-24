@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply text-sm;
+        @apply text-sm font-base;
     }
 
     img {
@@ -12,7 +12,7 @@
     }
 
     p {
-        @apply mb-4 last:mb-0 leading-6;
+        @apply mb-4 leading-6;
     }
 
     h1,
@@ -40,9 +40,9 @@
         @apply text-lg;
     }
 
-    li {
-        @apply last:mr-0;
-    }
+    /* li {
+        @apply last: mr-0;
+    } */
 
     a {
         @apply transition;

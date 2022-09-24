@@ -44,6 +44,9 @@ module.exports = {
             "3xl": "1.875rem",
             "4xl": "2.25rem",
         },
+        fontFamily: {
+            base: ["Dancing Script"],
+        },
         container: {
             center: true,
             padding: {

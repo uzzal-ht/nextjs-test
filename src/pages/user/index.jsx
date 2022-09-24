@@ -1,10 +1,16 @@
+import Head from "next/head";
 import UserSection from "../../components/UserSection";
 
 const User = ({ users }) => {
     return (
-        <div className="user-wrapper">
-            <UserSection users={users} />
-        </div>
+        <>
+            <Head>
+                <title>User page</title>
+            </Head>
+            <div className="user-wrapper">
+                <UserSection users={users} />
+            </div>
+        </>
     );
 };
 
